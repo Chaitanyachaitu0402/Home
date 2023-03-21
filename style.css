@@ -244,6 +244,6 @@ html,body{
 }
 @media screen and (max-width:355px) {
   .options{
-    font-size: 11px;
+    font-size: 15px;
   }
 }
