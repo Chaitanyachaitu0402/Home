@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  scroll-behavior: smooth;
+  background-color: #b9b9b9;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  color: #b9b9b9;
+  background-color: #313131;
+  padding: 10px;
+  align-items: center;
+  margin-top: 2%;
+}
+.container .logo{
+  display: flex;
+  align-items: center;
+  font-family: Arial;
+  gap: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.container .logo img{
+  width: 18%;
+}
+.container .icons{
+  width: 40vw;
+  gap: 0px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 16em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: grey;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.8em;
+  width: 1.8em;
+}
+.container .search .log{
+  background-color: #b9b9b9;
+  border: none;
+  border-radius: 20px;
+  padding: 13px 25px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.options{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  margin-top: 1%;
+}
+.options a{
+  text-decoration: none;
+  color: black;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 280px;
+  height: 394px;
+  background: #313131;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 50px;
+  flex: 1 0 394px 280px; 
+}
+.card img{
+  width: 18.93vw;
+  border-radius: 50px;
+}
+.card h3{
+  text-align: center;
+  color: #b9b9b9;
+}
+.card p{
+  margin-left: 10%;
+  color: #b9b9b9;
+}
+.card .button{
+  text-align: center;
+}
+.card .button button{
+  padding: 3px 18px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+.card .button .add{
+  background-color: #b9b9b9;
+  color: black;
+  border: none;
+  font-family: Arial;
+  font-weight: bold;
+}
+.cards{
+  margin-top: 5%;
+}
+@media screen and (max-width:14480px) {
+  .card img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:1251px) {
+  .container .icons{
+    display: none;
+  }
+}
+@media screen and (max-width:768px){
+  .container .logo{
+    padding: 10px;
+  }
+  .container .logo img{
+    width: 13%;
+  }
+  html,body{
+    background: transparent;
+    background-color: #b9b9b9;
+  }
+  .container{
+      padding: 10px;
+  }
+  .icons{
+      display: none;
+  }
+  .search__input{
+    width: 10em;
+  }
+  .container .logo{
+    font-size: 14px;
+  }
+  .container .search .log{
+    padding: 10px;
+  }
+  .options{
+    font-size: 14px;
+  }
+  .card img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:665px) {
+  .options{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:600px) {
+  .options{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:540px){
+  .options{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:500px) {
+  .container .logo{
+    width: 100%;
+  }
+  .container .logo img{
+    width: 15%;
+  }
+  .container .logo{
+    font-size: 0.9rem;
+  }
+  .container{
+      padding: 10px;
+  }
+  .icons ,.search{
+      display: none;
+  }
+  .options{
+    font-size: 13px;
+    gap: 20px;
+  }
+  .card img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:410px) {
+  .options{
+    font-size: 12px;
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width:355px) {
+  .options{
+    font-size: 11px;
+  }
+}
